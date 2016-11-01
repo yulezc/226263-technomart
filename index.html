@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Техномарт</title>
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
@@ -24,7 +25,7 @@
 					
 						<ul class="client-block">
 							<li><a class="laying" href="#">Закладки</a></li>
-							<li><a class="cart" href="#">Корзина</a></li>
+							<li><a class="basket" href="#">Корзина</a></li>
 							<li><a class="checkout" href="#">Оформить заказ</a></li>
 						</ul>
 					
@@ -32,7 +33,7 @@
 			</div>
 			<div class="header-middle">
 				<div class="container clearfix">
-					<p>
+					<p class="header-title">
 						Интернет-магазин<br>
 						строительных материалов<br>
 						и инструментов для ремонта
@@ -170,14 +171,14 @@
 				</div>
 				<div class="brands">
 					<ul>
-						<li><a href="#"><img src="img/bosch.png" width="126" height="36" alt="BOSCH"></a></li>
-						<li><a href="#"><img src="img/makita.png" width="123" height="40" alt="Makita"></a></li>
-						<li><a href="#"><img src="img/dewalt.png" width="146" height="44" alt="DeWALT"></a></li>
-						<li><a href="#"><img src="img/interskol.png" width="184" height="35" alt="ИНТЕРСКОЛ"></a></li>
-						<li><a href="#"><img src="img/hitachi.png" width="156" height="30" alt="HITACHI"></a></li>
-						<li><a href="#"><img src="img/lg.png" width="121" height="73" alt="LG"></a></li>
-						<li><a href="#"><img src="img/aeg.png" width="151" height="82" alt="AEG"></a></li>
-						<li><a href="#"><img src="img/metabo.png" width="173" height="67" alt="metabo"></a></li>
+						<li><a href="#"><img src="img/bosch.jpg" width="218" height="143" alt="BOSCH"></a></li>
+						<li><a href="#"><img src="img/makita.jpg" width="218" height="143" alt="Makita"></a></li>
+						<li><a href="#"><img src="img/dewalt.jpg" width="218" height="143" alt="DeWALT"></a></li>
+						<li><a href="#"><img src="img/interskol.jpg" width="218" height="143" alt="ИНТЕРСКОЛ"></a></li>
+						<li><a href="#"><img src="img/hitachi.jpg" width="218" height="143" alt="HITACHI"></a></li>
+						<li><a href="#"><img src="img/lg.jpg" width="218" height="143" alt="LG"></a></li>
+						<li><a href="#"><img src="img/aeg.jpg" width="218" height="143" alt="AEG"></a></li>
+						<li><a href="#"><img src="img/metabo.jpg" width="218" height="143" alt="metabo"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -296,5 +297,27 @@
 				</div>
 			</div>
 		</footer>
+
+		<div class="write-us">
+			<form class="write-form" action="#" method="post">
+				<div class="form-field name">
+					<label for="fullname">Ваше имя:</label><br>
+					<input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
+				</div>
+				<div class="form-field email">
+					<label for="email">Ваш e-mail:</label><br>
+					<input type="text" name="email" id="email" placeholder="Для отправки ответа">
+				</div>
+				<div class="form-field message">
+					<label for="message">Текст письма:</label><br>
+					<textarea type="text" name="message" id="message" placeholder="В свободной форме">
+					</textarea>
+				</div>
+
+				<div class="write-us-footer">
+					<input type="submit" class="btn" value="Отправить">
+				</div>
+			</form>
+		</div>
 	</body>
 </html>
