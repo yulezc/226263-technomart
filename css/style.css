@@ -1,6 +1,6 @@
 html,
 body {
-	min-width: 940px;
+	min-width: 960px;
 	margin: 0;
 	padding: 0;
 	font-size: 17px;
@@ -45,7 +45,7 @@ body {
 	font-size: 24px;
 	line-height: 24px;
 	color: #ffffff;
-	padding: 9px 55px;
+	padding: 11px 55px 8px 55px;
 	text-transform: uppercase;
 }
 
@@ -95,12 +95,12 @@ input[type="search"]::-moz-placeholder {
 	color: #ffffff;
 }
 
-.icon-search:hover {
-	opacity: 1;
-}
-
 .search input:hover {
 	background-color: #212a3a;
+}
+
+.icon-search:hover  {
+	opacity: 1;
 }
 
 .icon-search:active {
@@ -213,6 +213,11 @@ input[type="search"]::-moz-placeholder {
 .basket:active {
 	background-color: #161d29;
 	opacity: 0.5;
+}
+
+ .full,
+ .full:hover {
+	background-color: #ee3643;
 }
 
 .checkout {
@@ -349,10 +354,10 @@ input[type="search"]::-moz-placeholder {
 
 .user-block {
 	float: right;
+	position: relative;
 }
 
 .user-active {
-	position: relative;
 	width: 300px;
 	background-color:  #ffffff;
 } 
@@ -414,11 +419,23 @@ input[type="search"]::-moz-placeholder {
 	font-size: 16px;
 	line-height: 18px;
 	color: #32425c;
-	padding: 3px 15px 3px 18px;
+	padding: 8px 15px 3px 18px;
+}
+
+.account::after {
+	content: "";
+	position: absolute;
+	top: 14px;
+	left: -4px;
+	width: 4px;
+	height: 5px;
+	background: #32425c;
+	border-radius: 50%;
 }
 
 .account {
-	padding-left: 15px;
+	position: relative;
+	padding-left: 14px;
 }
 
 .orders:hover,
@@ -437,7 +454,7 @@ input[type="search"]::-moz-placeholder {
 	margin-top: 24px;
 }
 
-.main-navigation{
+.main-navigation {
 	width: 940px;
 }
 
@@ -451,7 +468,7 @@ input[type="search"]::-moz-placeholder {
 
 .main-navigation li {
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 	font-size: 17px;
 	line-height: 17px;	
 }
@@ -721,7 +738,6 @@ input[type="search"]::-moz-placeholder {
 	display: inline-block;
 	vertical-align: top;
 	width: 632px;
-	margin-right: px;
 	padding-left: 26px;
 	margin-top: 28px;
 	margin-bottom: 31px;
@@ -777,7 +793,6 @@ input[type="search"]::-moz-placeholder {
 
 .catalog-item .image img{
 	max-width:100%;
-	margin: 25px 38px 45px 18px;
 }
 
 .catalog-item .flag {
@@ -1217,7 +1232,7 @@ input[type="search"]::-moz-placeholder {
 	font-size: 30px;
 	line-height: 30px;
 	color: #ffffff;
-	padding: 14px 41px;
+	padding: 18px 41px 15px 41px;
 	text-transform: uppercase;
 }
 
@@ -1233,20 +1248,22 @@ input[type="search"]::-moz-placeholder {
 
 .footer-top-right {
 	float: right;
-	margin-top: 35px;
-	margin-bottom: 75px;	
+	width: 613px;
+	margin-top: 38px;
+	margin-bottom: 70px;	
 }
 
 .footer-nav {
 	padding: 0;
+	padding-left: 9px;
 	margin: 0;
-	margin-bottom: 32px;
+	margin-bottom: 34px;
 }
 
 .footer-menu {
 	padding: 0;
+	padding-left: 33px;
 	margin: 0;
-	margin-left: 10px;
 }
 
 .footer-nav ul,
@@ -1267,14 +1284,14 @@ input[type="search"]::-moz-placeholder {
 
 .footer-nav a {
 	display: block;
-	margin-left: 56px;
+	margin-left: 55px;
 	color: #ffffff;
 	text-decoration: none;
 }
 
 .footer-menu a {
 	display: block;
-	margin-left: 60px;
+	margin-left: 55px;
 	color: #ffd180;
 	text-decoration: none;
 }
@@ -1300,7 +1317,7 @@ input[type="search"]::-moz-placeholder {
 
 .copyright-left {
 	float: left;
-	width: 230px;
+	width: 250px;
 	margin-right: 140px;
 	color: #ffffff;
 }
@@ -1308,9 +1325,9 @@ input[type="search"]::-moz-placeholder {
 .social {
 	float: left;
 	width: 134px;
-	margin-right: 116px;
-	padding-top: 13px;
-	padding-bottom: 13px;
+	margin-right: 103px;
+	padding-top: 15px;
+	padding-bottom: 16px;
 }
 
 .feedback {
@@ -1338,20 +1355,23 @@ input[type="search"]::-moz-placeholder {
 }
 
 .copyright-right {
-	padding-left: 30px;
+	padding-left: 49px;
+}
+
+.breadcrumbs {
+	margin-top: 20px;
 }
 
 .breadcrumbs ul {
 	margin: 0;
-	padding: 0;
-	padding-top: 20px;
+	padding: 0;	
 }
 
 .breadcrumbs li {
 	position: relative;
-	display: inline;
-	padding-left: 26px;
-	margin-right: 15px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0;
 }
 
 .breadcrumbs li::before {
@@ -1366,11 +1386,12 @@ input[type="search"]::-moz-placeholder {
 	background-position: -36px -134px;
 }
 
-.breadcrumbs .main-page::before  {
+.breadcrumbs .main-page::before {
 	display: none;
 }
 
 .breadcrumbs a {
+	display: block;
 	font-family: "PT Sans", sans-serif;
 	font-size: 13px;
 	line-height: 18px; 
@@ -1381,7 +1402,7 @@ input[type="search"]::-moz-placeholder {
 
 .main-page a {
 	position: absolute;
-	top: 4px;
+	top: 3px;
 	left: 0px;
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
@@ -1390,14 +1411,30 @@ input[type="search"]::-moz-placeholder {
 	background-position: -114px -85px;
 }
 
- .breadcrumbs .main-page {
-	margin-right: 8px;
+.breadcrumbs .main-page {
+	width: 24px;
+	height: 18px;
+}
+
+.breadcrumbs .page-catalog {
+	padding-left: 26px;
+	padding-right: 14px;
+}
+
+.breadcrumbs .page-instruments {
+	padding-left: 21px;
+	padding-right: 16px;
+}
+
+.breadcrumbs .page-perforators {
+	padding-left: 24px;
 }
 
 h1 {
 	background-color: #f2f6f8;
 	font-size: 30px;
 	line-height: 30px;
+	font-weight: normal;
 	color: #32425c;
 	text-transform: uppercase;
 	padding-top: 30px;
@@ -1416,7 +1453,7 @@ h1 {
 	padding-top: 39px;
 	padding-right: 20px;
 	padding-left: 20px;
-	margin-bottom: 15px;
+	margin-bottom: 9px;
 	border-bottom-right-radius: 4px;
 	border-bottom-left-radius: 4px;
 	background: #f7f3ec;
@@ -1470,13 +1507,14 @@ h1 {
 
 .price-controls input {
 	width: 75px;
-	padding: 9px 10px;
 	font-family: "PT Sans", sans-serif;
 	font-size: 17px;
 	text-align: center;	
 	border: none;
 	border-radius: 3px;
 	background: #f7f3ec;
+	padding: 9px 10px;
+	margin-bottom: 8px;
 }
 
 .price-controls .dash {
@@ -1493,6 +1531,27 @@ h1 {
 	font-size: 17px;
 	line-height: 30px; 
 	text-transform: uppercase;
+}
+
+.title-price {
+	margin-top: 12px;
+}
+
+.title-checkbox {
+	margin-bottom: 10px;
+}
+
+.title-radio {
+	margin-top: 17px;
+	margin-bottom: 7px;
+}
+
+.border {
+	width: 220px;
+	height: 1px;
+	background-color: #e5e5e5;
+	margin-top: 17px;
+	margin-bottom: 15px;
 }
 
 .sort {
@@ -1556,7 +1615,8 @@ h1 {
 	border-bottom: 1px solid #ee3643;
 }
 
-.sort .active {
+.sort .active,
+.sort .active:hover {
 	color: #ee3643;
 	border: none;
 }
@@ -1583,12 +1643,14 @@ input[type="radio"] {
 input[type="checkbox"]+label {
 	position: relative;
 	display: block;
-	margin: 15px 0;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 35px;
 	font-family: "PT Sans", sans-serif;
 	font-size: 15px;
 	line-height: 20px;
 	text-transform: uppercase;
-	padding-left: 35px;
 	cursor: pointer;
 }
 
@@ -1596,7 +1658,7 @@ input[type="checkbox"]+label::before {
 	content: "";
 	position: absolute;
 	top: 4px;
-	left: 4px;
+	left: 0;
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
 	width: 23px;
@@ -1612,7 +1674,7 @@ input[type="checkbox"]:checked +label::after {
 	content: "";
 	position: absolute;
 	top: 4px;
-	left: 4px;
+	left: 0px;
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
 	width: 27px;
@@ -1624,12 +1686,14 @@ input[type="checkbox"]:checked +label::after {
 input[type="radio"]+label {
 	position: relative;
 	display: block;
-	margin: 15px 0;
+	margin-bottom: 11px;
+	padding-top: 6px;
+	padding-bottom: 4px;
+	padding-left: 35px;
 	font-family: "PT Sans", sans-serif;
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 20px;
 	text-transform: uppercase;
-	padding-left: 35px;
 	cursor: pointer;
 }
 
@@ -1637,7 +1701,7 @@ input[type="radio"]+label::before {
 	content: "";
 	position: absolute;
 	top: 4px;
-	left: 4px;
+	left: 0px;
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
 	width: 25px;
@@ -1649,7 +1713,7 @@ input[type="radio"]:checked +label::after {
 	content: "";
 	position: absolute;
 	top: 4px;
-	left: 4px;
+	left: 0px;
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
 	width: 25px;
@@ -1663,7 +1727,7 @@ input[type="radio"]:checked +label::after {
 	border-radius: 2px;
 	background-color: #ffffff;
 	padding: 10px 38px;
-	margin-top: 70px;
+	margin-top: 62px;
 	text-transform: uppercase;
 	font-family: "PT Sans", sans-serif;
 	font-size: 13px;
@@ -1673,16 +1737,19 @@ input[type="radio"]:checked +label::after {
 }
 
 .description {
+	border-top: 1px solid #f2f6f8;
+	height: 260px;
 	background-color: #f2f6f8;
+	margin: 0;
 }
 
 .description h2 {
-	font-family: "Cuprum", sans-serif;
-	font-size: 21px;
-	line-height: 24px;
+	font-size: 30px;
+	line-height: 30px;
 	text-transform: uppercase;
-	padding-top: 57px;
-	padding-bottom: 10px;
+	font-weight: normal;
+	padding-top: 39px;
+	padding-bottom: 0;
 }
 
 .description p {
@@ -1700,8 +1767,7 @@ input[type="radio"]:checked +label::after {
 
 .pagination a {
 	display: inline-block;
-	min-width: 38px;
-	height: 18px;
+	min-width: 36px;
 	text-decoration: none;
 	border: 1px solid #e5e5e5;
 	border-radius: 2px;
@@ -1712,7 +1778,7 @@ input[type="radio"]:checked +label::after {
 	vertical-align: top;
 	text-align: center;
 	margin-right: 6px;
-	padding: 10px 0;
+	padding: 9px 0;
 }
 
 .next-page  {
@@ -1725,6 +1791,7 @@ input[type="radio"]:checked +label::after {
 .pagination .current {
 	background-color: #ee3643;
 	border: 1px solid #ee3643;
+	color: #ffffff;
 }
 
 .pagination .current:hover {
