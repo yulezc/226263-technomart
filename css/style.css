@@ -727,7 +727,7 @@ input[type="search"]::-moz-placeholder {
 
 .default-title {
 	background-color: #f7f3ec;
-	margin-top: 19px;
+	margin-top: 20px;
 }
 
 .default-title h2 {
@@ -863,7 +863,7 @@ input[type="search"]::-moz-placeholder {
 	color: #ffffff;
 	text-decoration: none;
 	text-transform: uppercase;
-	margin: 7px 36px 13px 42px;
+	margin: 10px 36px 10px 42px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-radius: 3px;
@@ -1019,6 +1019,7 @@ input[type="search"]::-moz-placeholder {
 
 .service-slider {
 	width: 940px;
+	min-height: 182px;
 	padding-bottom: 102px;
 	padding-top: 55px;
 }
@@ -1148,8 +1149,8 @@ input[type="search"]::-moz-placeholder {
 }
 
 .information {
-	margin-top: 82px;
-	margin-bottom: 75px;
+	margin-top: 80px;
+	margin-bottom: 86px;
 }
 
 .information h3 {
@@ -1166,12 +1167,35 @@ input[type="search"]::-moz-placeholder {
 	font-family: "PT Sans", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
-	margin: 25px 0;
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+
+.company  ul {
+	margin-top: 18px;
+	padding-left: 0;
+	margin-bottom: 35px;
 }
 
 .company li {
+	display: block;
+	position: relative;
+	font-size: 18px;
+	line-height: 24px;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 16px;
+	padding-left: 36px;
+}
+
+.company li::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 25px;
+	height: 2px;
+	background-color: #fb565a;
 }
 
 .company a,
@@ -1204,12 +1228,12 @@ input[type="search"]::-moz-placeholder {
 	width: 219px;
 }
 
-.btn-feedback {
-	margin-top: 34px;
+.contacts img {
+	margin-top: 31px;
 }
 
-.company li {
-	padding: 10px;
+.btn-feedback {
+	margin-top: 37px;
 }
 
 .footer-top {
@@ -1777,7 +1801,7 @@ input[type="radio"]:checked +label::after {
 	margin: 0;
 	padding-bottom: 70px;
 	font-family: "PT Sans", sans-serif;
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 24px; 
 }
 
