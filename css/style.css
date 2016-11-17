@@ -258,7 +258,7 @@ input[type="search"]::-moz-placeholder {
 	width: 144px;
 	border: 3px solid #ffffff;
 	line-height: 18px;
-	font-size: 21px;
+	font-size: 20px;
 	color: #e93536;
 	padding: 11px 49px 10px 68px;
 }
@@ -479,7 +479,7 @@ input[type="search"]::-moz-placeholder {
 }
 
 .main-navigation .nav-main-page {
-	padding-left: 52px;
+	padding-left: 51px;
 	padding-right: 34px;
 }
 
@@ -791,28 +791,28 @@ input[type="search"]::-moz-placeholder {
 	max-width:100%;
 }
 
-.catalog-item .flag {
+.new::before {
+	content: "";
 	position: absolute;
 	top: -1px;
 	right: -1px;
 	width: 60px;
 	height: 60px;
-	z-index: 5;
+	z-index: 8;
+	background: url("../img/icon-new.png");
+	background-repeat: no-repeat;
 }
 
-.flag-new {
-	background: url("../img/icon-new.png") no-repeat 0 0;
-}
-
-.promo-item .flag {
+.promo .new::before {
+	content: "";
 	position:absolute;
 	top: 0;
 	right: 0;
 	width: 60px;
 	height: 60px;
-	text-indent: -1000px;
-	overflow: hidden;
-	z-index: 5;
+	z-index: 8;
+	background: url("../img/icon-new.png");
+	background-repeat: no-repeat;
 }
 
 .catalog-item .title {
@@ -893,10 +893,6 @@ input[type="search"]::-moz-placeholder {
 .catalog-item:hover {
 	border: 1px solid #ffffff;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-.catalog-item:hover .flag-new {
-	z-index: 8;
 }
 
 .actions .buy,
@@ -1923,6 +1919,7 @@ input[type="radio"]:checked:disabled +label::after {
 	position: absolute;
 	top: 9px;
 	right: 9px;
+	font-size: 0;
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
 	background-position: -5px -5px;
@@ -1964,7 +1961,7 @@ input[type="radio"]:checked:disabled +label::after {
 .name {
 	display: inline-block;
 	margin-top: 45px;
-	margin-right: 14px;
+	margin-right: 13px;
 	margin-bottom: 20px;
 }
 
@@ -1975,13 +1972,15 @@ input[type="radio"]:checked:disabled +label::after {
 .form-field textarea {
 	width: 455px;
 	border: 2px solid #d7dcde;
-	margin-bottom: 33px;
 	text-indent: 13px;
 	border-radius: 2px;
 	font-family: "PT Sans", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	color: #a7a7a7;
+	resize: vertical;
+	margin-bottom: 33px;
+	padding-top: 7px;
 }
 
 .write-us-footer {
@@ -2017,8 +2016,6 @@ input[type="radio"]:checked:disabled +label::after {
 	transform: translate(-50%, -50%);
 	width: 940px;
 	height: 446px;
-	margin-top: -220px;
-  	margin-left: -470px;
   	z-index: 10;
 }
 
@@ -2027,7 +2024,6 @@ input[type="radio"]:checked:disabled +label::after {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	margin-left: -310px;
 	width: 620px;
 	height: 273px;
 	border-top: 7px solid #ee3643;
