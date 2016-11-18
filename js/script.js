@@ -7,7 +7,7 @@
 	var map = document.querySelector(".modal-map");
 	var closemap = document.querySelector(".modal-map-close");
 
-	var buy = document.querySelector(".buy");
+	var buy = document.querySelectorAll(".buy");
 	var cart = document.querySelector(".cart");
 	var closecart = document.querySelector(".cart-close");
 
@@ -25,11 +25,13 @@ if (close) {
 	popup.classList.remove("write-us-show");
 });
 }
-if (buy) {
-	buy.addEventListener("click", function(event) {
+	if (buy) {
+	for (var i = 0; i < buy.length; i++) {
+	buy[i].addEventListener("click", function(event) {
 	event.preventDefault();
 	cart.classList.add("cart-show");
-});
+	});
+}
 }
 
 if (closecart) {
