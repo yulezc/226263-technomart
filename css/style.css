@@ -99,7 +99,7 @@ input[type="search"]::-moz-placeholder {
 	background-color: #212a3a;
 }
 
-.icon-search:hover  {
+.icon-search:hover {
 	opacity: 1;
 }
 
@@ -175,7 +175,7 @@ input[type="search"]::-moz-placeholder {
 	background-color: #212a3a;
 }
 
-.bookmark:hover::before{
+.bookmark:hover::before {
 	opacity: 1;
 }
 
@@ -305,7 +305,7 @@ input[type="search"]::-moz-placeholder {
 	height: 17px;
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
-	background-position:  -67px -107px;
+	background-position: -67px -107px;
 }
 
 .login:hover {
@@ -359,7 +359,7 @@ input[type="search"]::-moz-placeholder {
 
 .user-active {
 	width: 300px;
-	background-color:  #ffffff;
+	background-color: #ffffff;
 } 
 
 .user-name {
@@ -591,7 +591,7 @@ input[type="search"]::-moz-placeholder {
 	margin-top: 21px;
 }
 
-.gallery  {
+.gallery {
 	position: relative;
 	width: 620px;
 	height: 265px;
@@ -622,7 +622,7 @@ input[type="search"]::-moz-placeholder {
 	line-height: 24px;
 	color: #ffffff;
 	margin: 0;
-	margin-left: 26px;	
+	margin-left: 26px;
 }
 
 .slides a {
@@ -644,7 +644,7 @@ input[type="search"]::-moz-placeholder {
 	background-color: #ca2c37;
 }
 
-.slides a:active{
+.slides a:active {
 	background-color: #ba2732;
 }
 
@@ -691,12 +691,12 @@ input[type="search"]::-moz-placeholder {
 }
 
 #promo-btn1:checked ~ .slides #slide1,
-#promo-btn2:checked ~ .slides #slide2 { 
+#promo-btn2:checked ~ .slides #slide2 {
 	display: block;
 }
 
 #promo-btn1:checked ~ .gallery-controls label[for="promo-btn1"],
-#promo-btn2:checked ~ .gallery-controls label[for="promo-btn2"] { 
+#promo-btn2:checked ~ .gallery-controls label[for="promo-btn2"] {
 	background-color: #ee3643;
 }
 
@@ -765,11 +765,11 @@ input[type="search"]::-moz-placeholder {
 }
 
 .default-title a:hover {
-    background-color: #ca2c37;
+	background-color: #ca2c37;
 }
 
-.default-title a:active{
-    background-color: #ba2732;
+.default-title a:active {
+	background-color: #ba2732;
 }
 
 .catalog-item {
@@ -784,12 +784,12 @@ input[type="search"]::-moz-placeholder {
 	margin-top: 20px;
 }
 
-.catalog-item .image{
+.catalog-item .image {
 	width:218px;
 	height:168px;
 }
 
-.catalog-item .image img{
+.catalog-item .image img {
 	max-width:100%;
 }
 
@@ -870,7 +870,7 @@ input[type="search"]::-moz-placeholder {
 	padding-bottom: 10px;
 }
 
-.catalog-item .price:after{
+.catalog-item .price:after {
 	content: "";
 	position:absolute;
 	top: 0px;
@@ -909,7 +909,7 @@ input[type="search"]::-moz-placeholder {
 	font-weight: normal;
 	line-height: 18px;
 	text-decoration: none;
-	text-transform: uppercase;    
+	text-transform: uppercase;
 	border-radius: 3px;
 	margin: 0 auto;
 	margin-bottom: 7px;
@@ -926,7 +926,7 @@ input[type="search"]::-moz-placeholder {
 	display: none;
 }
 
-.catalog-item:hover .actions{
+.catalog-item:hover .actions {
 	display:block;
 }
 
@@ -1113,7 +1113,7 @@ input[type="search"]::-moz-placeholder {
 	background-color: #ca2c37;
 }
 
-.credit-btn:active{
+.credit-btn:active {
 	background-color: #ba2732;
 }
 
@@ -1810,11 +1810,11 @@ input[type="radio"]:checked +label::after {
 	background-position: -5px -38px;
 }
 
-input[type="radio"]:checked:hover +label::after {
+input[type="radio"]:checked:hover+label::after {
 	background-position: -104px -38px;
 }
 
-input[type="radio"]:checked:disabled +label::after {
+input[type="radio"]:checked:disabled+label::after {
 	background-position: -5px -38px;
 	opacity: 0.3;
 }
@@ -1879,7 +1879,7 @@ input[type="radio"]:checked:disabled +label::after {
 	padding: 9px 0;
 }
 
-.next-page  {
+.next-page {
 	width: 138px;
 	display: block;
 	padding-left: 30px;
@@ -2024,7 +2024,7 @@ input[type="radio"]:checked:disabled +label::after {
 	width: 940px;
 	height: 446px;	
 	transform: translate(-50%, -50%);
-  	z-index: 10;
+	z-index: 10;
 }
 
 .cart {
@@ -2074,7 +2074,7 @@ input[type="radio"]:checked:disabled +label::after {
 	padding-bottom: 10px;
 }
 
-.checkout-btn  {
+.checkout-btn {
 	background-color: #ee3643;
 	color: #ffffff;
 }
@@ -2120,9 +2120,9 @@ input[type="radio"]:checked:disabled +label::after {
 }
 
 .social-btn-fb::before {
-    width: 10px;
-    height: 18px;
-    background-position: -139px -57px;
+	width: 10px;
+	height: 18px;
+	background-position: -139px -57px;
 }
 
 .social-btn-inst::before {
@@ -2143,7 +2143,7 @@ input[type="radio"]:checked:disabled +label::after {
 
 @keyframes bounce {
 	0% {
-		opacity: 0; 
+		opacity: 0;
 	}
 	30% {
 		opacity: 0.4;
